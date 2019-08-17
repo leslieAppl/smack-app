@@ -21,6 +21,8 @@ class ChannelVC: UIViewController {
         
     }
     
+    @IBAction func unwindFromCreateAccountVC(unwindSegue: UIStoryboardSegue) {}
+    
     @IBAction func loginBtn(_ sender: Any) {
         performSegue(withIdentifier: TO_LOGIN, sender: nil)
     }
