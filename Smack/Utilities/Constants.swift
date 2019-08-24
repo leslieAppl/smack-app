@@ -8,11 +8,13 @@
 
 import Foundation
 
+// Universal Variables used by the whole project
 typealias CompletionHandler = (_ Succes: Bool) -> ()
 
 // URL Constants
 let BASE_URL = "https://lesliechatchat.herokuapp.com/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
+let URL_LOGIN = "\(BASE_URL)account/login"
 
 
 // Segues
@@ -25,6 +27,9 @@ let TOKEN_KEY = "token"
 let LOOGED_IN_KEY = "loggedIn"
 let USER_EMAIL = "userEmail"
 
-
+// Headers
+let HEADER = [
+    "Content-Type": "application/json; charset=utf-8"
+]
 
 

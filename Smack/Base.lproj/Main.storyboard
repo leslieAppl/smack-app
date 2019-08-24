@@ -70,8 +70,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="#general" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFv-MA-FWw">
-                                                    <rect key="frame" x="20" y="11" width="335" height="24"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#general" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFv-MA-FWw">
+                                                    <rect key="frame" x="20" y="-9" width="335" height="24"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                     <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -79,6 +79,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="iFv-MA-FWw" firstAttribute="leading" secondItem="n9d-qf-fMs" secondAttribute="leading" constant="20" id="1DZ-3S-S2x"/>
+                                                <constraint firstItem="iFv-MA-FWw" firstAttribute="top" secondItem="n9d-qf-fMs" secondAttribute="topMargin" constant="-20" id="IXe-gb-Aet"/>
                                                 <constraint firstItem="iFv-MA-FWw" firstAttribute="centerX" secondItem="n9d-qf-fMs" secondAttribute="centerX" id="wSD-HZ-DiN"/>
                                             </constraints>
                                         </tableViewCellContentView>
