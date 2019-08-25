@@ -13,6 +13,7 @@ import SwiftyJSON
 class AuthService {
     static let instance = AuthService()
     
+    // UserDefaults.standard(set, get)
     let defaults = UserDefaults.standard
     
     var isLoggedIn: Bool {
@@ -102,7 +103,45 @@ class AuthService {
                 debugPrint(response.result.error as Any)
             }
         }
+    }
+    
+    func addUser(name: String, email: String, avatarName: String, avatarColor: String, completion: @escaping CompletionHandler) {
         
+        let lowerCaseEmail = email.lowercased()
         
+        let body: [String: Any] = [
+            "name": name,
+            "email": lowerCaseEmail,
+            "avatarName": avatarName,
+            "avatarColor": avatarColor
+        ]
+        
+        let header = [
+            "Authorization": "Bearer \(AuthService.instance.authToken)",
+            "Content-Type": "application/json; charset=utf-8"
+        ]
+        
+        Alamofire.request(URL_ADD_USER, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
+            
+            if response.result.error == nil {
+                guard let data = response.data else { return }
+                do {
+                    let json = try JSON(data: data)
+                    let id = json["_id"].stringValue
+                    let name = json["name"].stringValue
+                    let email = json["email"].stringValue
+                    let color = json["avatarColor"].stringValue
+                    let avatarName = json["avatarName"].stringValue
+                    
+                    UserDataService.instance.setUserData(id: id, color: color, avatarName: avatarName, email: email, name: name)
+                    completion(true)
+                } catch let error {
+                    debugPrint(error as Any)
+                }
+            } else {
+                completion(false)
+                debugPrint(response.result.error as Any)
+            }
+        }
     }
 }
