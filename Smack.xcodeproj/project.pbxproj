@@ -24,6 +24,8 @@
 		CED06F78231389EE00E95216 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED06F77231389EE00E95216 /* AvatarPickerVC.swift */; };
 		CED06F7A2313946500E95216 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED06F792313946500E95216 /* AvatarCell.swift */; };
 		CED06F7C23167F5E00E95216 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED06F7B23167F5E00E95216 /* CircleImage.swift */; };
+		CED06F7F2317C1F300E95216 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED06F7D2317C1F300E95216 /* ProfileVC.swift */; };
+		CED06F802317C1F300E95216 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED06F7E2317C1F300E95216 /* ProfileVC.xib */; };
 		CEE0370B2307EA0F00A89B9B /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0370A2307EA0F00A89B9B /* CreateAccountVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		CED06F77231389EE00E95216 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		CED06F792313946500E95216 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		CED06F7B23167F5E00E95216 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		CED06F7D2317C1F300E95216 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		CED06F7E2317C1F300E95216 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		CEE0370A2307EA0F00A89B9B /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		F645B160CC5C4B0F4326083C /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +109,7 @@
 		CE33B5C123068324004B49C2 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				CED06F812317C20A00E95216 /* XIBs */,
 				CE17B433230EBB3600C4E955 /* Services */,
 				CE33B5E62306DA99004B49C2 /* Utilities */,
 				CE33B5DF2306A7FE004B49C2 /* Model */,
@@ -138,6 +143,7 @@
 				CE33B5E92306E26B004B49C2 /* LoginVC.swift */,
 				CEE0370A2307EA0F00A89B9B /* CreateAccountVC.swift */,
 				CED06F77231389EE00E95216 /* AvatarPickerVC.swift */,
+				CED06F7D2317C1F300E95216 /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -166,6 +172,14 @@
 				CE33B5E72306DAB2004B49C2 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CED06F812317C20A00E95216 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				CED06F7E2317C1F300E95216 /* ProfileVC.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 		E7B8EB0B5C4E48F08382546B /* Frameworks */ = {
@@ -237,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED06F802317C1F300E95216 /* ProfileVC.xib in Resources */,
 				CE33B5CD23068324004B49C2 /* LaunchScreen.storyboard in Resources */,
 				CE33B5CA23068324004B49C2 /* Assets.xcassets in Resources */,
 				CE33B5C823068324004B49C2 /* Main.storyboard in Resources */,
@@ -295,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED06F7F2317C1F300E95216 /* ProfileVC.swift in Sources */,
 				CE33B5E32306A85E004B49C2 /* ChannelVC.swift in Sources */,
 				CED06F78231389EE00E95216 /* AvatarPickerVC.swift in Sources */,
 				CE33B5E12306A82C004B49C2 /* ChatVC.swift in Sources */,
