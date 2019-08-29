@@ -91,8 +91,9 @@
                                 <rect key="frame" x="281" y="77.5" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Nxi-Fj-0xe">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Nxi-Fj-0xe" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="18" y="587" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="U9p-Wp-GNb"/>
                                     <constraint firstAttribute="width" constant="60" id="hQJ-0V-vNJ"/>
@@ -120,6 +121,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="Act-wf-gXD" id="esO-RO-Dgv"/>
+                        <outlet property="userImg" destination="Nxi-Fj-0xe" id="JVs-UK-YIV"/>
                         <segue destination="a5G-nv-5ng" kind="show" identifier="toLogin" id="dXw-xX-ARb"/>
                     </connections>
                 </viewController>
