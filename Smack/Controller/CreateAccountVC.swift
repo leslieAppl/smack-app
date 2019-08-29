@@ -19,6 +19,7 @@ class CreateAccountVC: UIViewController {
     // Variables
     var avatarName = "profileDefault"
     var avatarColor = "[0.5, 0.5, 0.5, 1]"
+    var bgColor: UIColor?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,11 +32,16 @@ class CreateAccountVC: UIViewController {
         if UserDataService.instance.avatarName != "" {
             userImg.image = UIImage(named: UserDataService.instance.avatarName)
             avatarName = UserDataService.instance.avatarName
+            if avatarName.contains("light") && bgColor == nil {
+                userImg.backgroundColor = UIColor.lightGray
+            }
         }
     }
     
     @IBAction func closeBtn(_ sender: Any) {
         performSegue(withIdentifier: UNWIND_TO_CHANNEL, sender: nil)
+        self.avatarName = "profileDefault"
+        self.avatarColor = "[0.5, 0.5, 0.5, 1]"
     }
     
     @IBAction func creatAccountBtn(_ sender: Any) {
@@ -51,6 +57,7 @@ class CreateAccountVC: UIViewController {
                             if success {
                                 print("name: \(UserDataService.instance.name)", "avatarName: \(UserDataService.instance.avatarName)")
                                 self.performSegue(withIdentifier: UNWIND_TO_CHANNEL, sender: nil)
+                                NotificationCenter.default.post(name: NOTIFI_USER_DATA_DID_CHANGE, object: nil)
                             }
                         })
                     }
@@ -65,12 +72,24 @@ class CreateAccountVC: UIViewController {
     }
     
     @IBAction func pickBGColorBtn(_ sender: Any) {
+        let r = CGFloat(arc4random_uniform(255)) / 255
+        let g = CGFloat(arc4random_uniform(255)) / 255
+        let b = CGFloat(arc4random_uniform(255)) / 255
+        
+        bgColor = UIColor(red: r, green: g, blue: b, alpha: 1)
+        UIView.animate(withDuration: 0.2) {
+            self.userImg.backgroundColor = self.bgColor
+        }
+        self.userImg.backgroundColor = bgColor
     }
     
     func setupView () {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CreateAccountVC.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
+        userNameTxt.attributedPlaceholder = NSAttributedString(string: "username", attributes: [NSAttributedString.Key.foregroundColor: smackPurplePlaceholder])
+        emailTxt.attributedPlaceholder = NSAttributedString(string: "email", attributes: [NSAttributedString.Key.foregroundColor: smackPurplePlaceholder])
+        passwordTxt.attributedPlaceholder = NSAttributedString(string: "password", attributes: [NSAttributedString.Key.foregroundColor: smackPurplePlaceholder])
     }
     
     @objc func dismissKeyboard() {
