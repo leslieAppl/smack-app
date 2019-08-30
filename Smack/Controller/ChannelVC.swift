@@ -30,6 +30,12 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         setupUserInfo()
     }
     
+    @IBAction func addChannelBtn(_ sender: Any) {
+        let addChannel = AddChannelVC()
+        addChannel.modalPresentationStyle = .custom
+        present(addChannel, animated: true, completion: nil)
+    }
+    
     @IBAction func unwindFromCreateAccountVC(unwindSegue: UIStoryboardSegue) {}
     
     @IBAction func loginBtn(_ sender: Any) {
