@@ -29,7 +29,7 @@
                     <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KiL-fd-Anu">
-                    <rect key="frame" x="57.5" y="203.5" width="260" height="260"/>
+                    <rect key="frame" x="57.5" y="153.5" width="260" height="260"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Kr-KW-9SP">
                             <rect key="frame" x="83.5" y="20" width="93" height="24"/>
@@ -100,7 +100,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ymb-N6-Gkq" secondAttribute="bottom" id="VTe-ma-UXB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ymb-N6-Gkq" secondAttribute="trailing" id="jzw-uT-5ai"/>
                 <constraint firstItem="ymb-N6-Gkq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xlu-Ow-rv0"/>
-                <constraint firstItem="KiL-fd-Anu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ywt-MO-ThO"/>
+                <constraint firstItem="KiL-fd-Anu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-50" id="ywt-MO-ThO"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>

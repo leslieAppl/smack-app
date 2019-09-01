@@ -28,7 +28,7 @@
                     <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ks8-Rw-WNf">
-                    <rect key="frame" x="77" y="318" width="260" height="260"/>
+                    <rect key="frame" x="77" y="248" width="260" height="260"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMg-Xe-aLE" customClass="RoundedBtn" customModule="Smack" customModuleProvider="target">
                             <rect key="frame" x="15" y="213" width="230" height="32"/>
@@ -78,7 +78,7 @@
                                     </constraints>
                                     <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5J0-Ik-MLv">
                                     <rect key="frame" x="0.0" y="80" width="230" height="2"/>
@@ -126,7 +126,7 @@
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1da-fn-gyn" secondAttribute="bottom" id="7I6-Yj-D3T"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1da-fn-gyn" secondAttribute="trailing" id="M9K-rN-j6h"/>
-                <constraint firstItem="ks8-Rw-WNf" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="dgD-Dz-AZc"/>
+                <constraint firstItem="ks8-Rw-WNf" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-70" id="dgD-Dz-AZc"/>
                 <constraint firstItem="ks8-Rw-WNf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="e4I-pp-eeN"/>
                 <constraint firstItem="1da-fn-gyn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qRa-JN-qsc"/>
                 <constraint firstItem="1da-fn-gyn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ux5-XQ-yxs"/>
