@@ -11,6 +11,7 @@
 		CE041DC923123CF00099C2CC /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE041DC823123CF00099C2CC /* UserDataService.swift */; };
 		CE09D50A230F76A200FF5A70 /* RoundedBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09D509230F76A200FF5A70 /* RoundedBtn.swift */; };
 		CE17B435230EBB5700C4E955 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17B434230EBB5700C4E955 /* AuthService.swift */; };
+		CE33B395231CAF7F00AD5A8C /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33B394231CAF7F00AD5A8C /* KeyboardBoundView.swift */; };
 		CE33B5C323068324004B49C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33B5C223068324004B49C2 /* AppDelegate.swift */; };
 		CE33B5C823068324004B49C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE33B5C623068324004B49C2 /* Main.storyboard */; };
 		CE33B5CA23068324004B49C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE33B5C923068324004B49C2 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		CE041DC823123CF00099C2CC /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		CE09D509230F76A200FF5A70 /* RoundedBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBtn.swift; sourceTree = "<group>"; };
 		CE17B434230EBB5700C4E955 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		CE33B394231CAF7F00AD5A8C /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 		CE33B5BF23068324004B49C2 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE33B5C223068324004B49C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE33B5C723068324004B49C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				CED06F792313946500E95216 /* AvatarCell.swift */,
 				CED06F7B23167F5E00E95216 /* CircleImage.swift */,
 				CED945EF2318DFE9009ADCDC /* ChannelCell.swift */,
+				CE33B394231CAF7F00AD5A8C /* KeyboardBoundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE33B395231CAF7F00AD5A8C /* KeyboardBoundView.swift in Sources */,
 				CE91D52C231B658D0095C0A6 /* SocketService.swift in Sources */,
 				CED06F7F2317C1F300E95216 /* ProfileVC.swift in Sources */,
 				CED945F02318DFE9009ADCDC /* ChannelCell.swift in Sources */,

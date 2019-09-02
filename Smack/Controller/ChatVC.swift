@@ -13,10 +13,11 @@ class ChatVC: UIViewController {
     // Outlets
     @IBOutlet weak var menuBtn: UIButton!
     @IBOutlet weak var channelNameLbl: UILabel!
+    @IBOutlet weak var messageTxt: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.bindToKeyboard()
         menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
         self.view.addGestureRecognizer((self.revealViewController()?.panGestureRecognizer())!)
         self.view.addGestureRecognizer((self.revealViewController()?.tapGestureRecognizer())!)
@@ -29,6 +30,7 @@ class ChatVC: UIViewController {
                 NotificationCenter.default.post(name: NOTIFI_USER_DATA_DID_CHANGE, object: nil)
             }
         }
+        setupView()
     }
     
     @objc func userDataDidChange(_ notif: Notification) {
@@ -49,6 +51,20 @@ class ChatVC: UIViewController {
         channelNameLbl.text = "#\(channelName)"
         getMessages()
     }
+
+    @IBAction func sendMsgBtn(_ sender: Any) {
+        if AuthService.instance.isLoggedIn {
+            guard let channelId = MessageService.instance.selectedChannel?.id else { return }
+            guard let message = messageTxt.text else { return }
+            
+            SocketService.instance.addMessage(messageBody: message, userId: UserDataService.instance.id, channelId: channelId) { (success) in
+                if success {
+                    self.messageTxt.text = ""
+                    self.messageTxt.resignFirstResponder()
+                }
+            }
+        }
+    }
     
     func onLoginGetMessages() {
         MessageService.instance.findAllChannel { (success) in
@@ -68,5 +84,14 @@ class ChatVC: UIViewController {
         MessageService.instance.findAllMessagesForChannel(channelId: channelId) { (success) in
             
         }
+    }
+    
+    func setupView() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func handleTap() {
+        view.endEditing(true)
     }
 }
