@@ -128,7 +128,6 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             isTyping = true
         }
     }
-    
 
     @IBAction func sendMsgBtn(_ sender: Any) {
         if AuthService.instance.isLoggedIn {

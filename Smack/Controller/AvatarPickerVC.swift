@@ -17,13 +17,11 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
     // Variables
     var avatarType = AvatarType.dark
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         collectionView.dataSource = self
         collectionView.delegate = self
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -77,5 +75,4 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBAction func backBtn(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
 }
