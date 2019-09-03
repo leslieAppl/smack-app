@@ -246,11 +246,18 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugD-xH-GKX">
+                                <rect key="frame" x="8" y="631" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="K9W-Uw-R92" firstAttribute="leading" secondItem="bYQ-Ln-5dH" secondAttribute="leading" id="APD-YM-vRI"/>
                             <constraint firstItem="vaT-Ec-YjH" firstAttribute="top" secondItem="whJ-fk-e06" secondAttribute="bottom" id="Ala-85-yji"/>
+                            <constraint firstItem="ugD-xH-GKX" firstAttribute="leading" secondItem="bYQ-Ln-5dH" secondAttribute="leading" constant="8" id="Dzq-ju-Och"/>
                             <constraint firstItem="bYQ-Ln-5dH" firstAttribute="trailing" secondItem="vaT-Ec-YjH" secondAttribute="trailing" id="FSY-V7-HKm"/>
                             <constraint firstItem="bYQ-Ln-5dH" firstAttribute="trailing" secondItem="mMU-hW-SW2" secondAttribute="trailing" id="KDE-I2-z3m"/>
                             <constraint firstItem="bYQ-Ln-5dH" firstAttribute="trailing" secondItem="K9W-Uw-R92" secondAttribute="trailing" id="LZp-Vl-PRz"/>
@@ -260,6 +267,7 @@
                             <constraint firstItem="K9W-Uw-R92" firstAttribute="bottom" secondItem="bYQ-Ln-5dH" secondAttribute="bottom" id="bGM-O0-LTV"/>
                             <constraint firstItem="whJ-fk-e06" firstAttribute="top" secondItem="bYQ-Ln-5dH" secondAttribute="top" id="pkM-mV-h1G"/>
                             <constraint firstItem="vaT-Ec-YjH" firstAttribute="leading" secondItem="bYQ-Ln-5dH" secondAttribute="leading" id="qih-Ie-mYP"/>
+                            <constraint firstItem="K9W-Uw-R92" firstAttribute="top" secondItem="ugD-xH-GKX" secondAttribute="bottom" constant="6" id="tvd-3L-M5U"/>
                             <constraint firstItem="bYQ-Ln-5dH" firstAttribute="trailing" secondItem="whJ-fk-e06" secondAttribute="trailing" id="zZs-Ga-vvx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bYQ-Ln-5dH"/>
@@ -270,6 +278,7 @@
                         <outlet property="messageTxt" destination="K9W-Uw-R92" id="HcB-w1-TDw"/>
                         <outlet property="sendBtn" destination="mMU-hW-SW2" id="Gm0-2W-hX5"/>
                         <outlet property="tableView" destination="vaT-Ec-YjH" id="4gK-zO-anK"/>
+                        <outlet property="typingUsersLbl" destination="ugD-xH-GKX" id="7eu-XQ-s5c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zF5-mu-Lfj" userLabel="First Responder" sceneMemberID="firstResponder"/>
