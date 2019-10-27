@@ -1,0 +1,21 @@
+version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+options: "d57c0db03475b9307956b1698d403c4b"
+build_time: [1569380307, 661413000]
+inputs:
+  "/Users/leslie/Udemy/iOS/smack-app/Pods/Alamofire/Source/AFError.swift": [1567654377, 658845663]
+  "/Users/leslie/Udemy/iOS/smack-app/Pods/Alamofire/Source/Alamofire.swift": [1567654377, 659048053]
+  "/Users/leslie/Udemy/iOS/smack-app/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift": [1567654377, 659223201]
+  "/Users/leslie/Udemy/iOS/smack-app/Pods/Alamofire/Source/MultipartFormData.swift": [1567654377, 659430212]
+  "/Users/leslie/Udemy/iOS/smack-app/Pods/Alamofire/Source/NetworkReachabilityManager.swift": [1567654377, 659583201]
+  "/Users/leslie/Udemy/iOS/smack-app/Pods/Alamofire/Source/Notifications.swift": [1567654377, 659684931]
+  "/Users/leslie/Udemy/iOS/smack-app/Pods/Alamofire/Source/ParameterEncoding.swift": [1567654377, 659845888]
+  "/Users/leslie/Udemy/iOS/smack-app/Pods/Alamofire/Source/Request.swift": [1567654377, 660135120]
+  "/Users/leslie/Udemy/iOS/smack-app/Pods/Alamofire/Source/Response.swift": [1567654377, 660328048]
+  "/Users/leslie/Udemy/iOS/smack-app/Pods/Alamofire/Source/ResponseSerialization.swift": [1567654377, 660504750]
+  "/Users/leslie/Udemy/iOS/smack-app/Pods/Alamofire/Source/Result.swift": [1567654377, 660764373]
+  "/Users/leslie/Udemy/iOS/smack-app/Pods/Alamofire/Source/ServerTrustPolicy.swift": [1567654377, 660909134]
+  "/Users/leslie/Udemy/iOS/smack-app/Pods/Alamofire/Source/SessionDelegate.swift": [1567654377, 661129589]
+  "/Users/leslie/Udemy/iOS/smack-app/Pods/Alamofire/Source/SessionManager.swift": [1567654377, 661375348]
+  "/Users/leslie/Udemy/iOS/smack-app/Pods/Alamofire/Source/TaskDelegate.swift": [1567654377, 661622174]
+  "/Users/leslie/Udemy/iOS/smack-app/Pods/Alamofire/Source/Timeline.swift": [1567654377, 661811949]
+  "/Users/leslie/Udemy/iOS/smack-app/Pods/Alamofire/Source/Validation.swift": [1567654377, 662002994]
