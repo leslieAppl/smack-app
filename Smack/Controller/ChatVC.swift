@@ -59,6 +59,7 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 //            }
 //        }
         
+        
         SocketService.instance.getTypingUsers { (typingUsers) in
             guard let channelId = MessageService.instance.selectedChannel?.id else { return }
             var names = ""
@@ -92,6 +93,14 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
         }
         setupView()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        print(">> ChatVC.viewDidDisappear")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print(">> ChatVC.viewDidAppear")
     }
     
     @objc func userDataDidChange(_ notif: Notification) {

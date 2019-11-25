@@ -22,6 +22,14 @@ class ProfileVC: UIViewController {
         setupView()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        print(">> ProfileVC.viewDidAppear")
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        print(">> ProfileVC.viewDidDisappear")
+    }
+
     @IBAction func closeBtn(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

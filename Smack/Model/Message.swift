@@ -17,3 +17,4 @@ struct Message {
     public private(set) var id: String!
     public private(set) var timeStamp: String!
 }
+

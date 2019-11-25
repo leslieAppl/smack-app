@@ -40,7 +40,13 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        print(">> ChannelVC.viewDidAppear")
+
         setupUserInfo()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        print(">> ChannelVC.viewDidDisappear")
     }
     
     @IBAction func addChannelBtn(_ sender: Any) {
@@ -52,6 +58,7 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     @IBAction func unwindFromCreateAccountVC(unwindSegue: UIStoryboardSegue) {}
+    @IBAction func unwindToChanneleVC(segue: UIStoryboard) {}
     
     @IBAction func loginBtn(_ sender: Any) {
         if AuthService.instance.isLoggedIn {

@@ -29,6 +29,8 @@ class CreateAccountVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        print(">> CreateAccountVC.viewDidAppear")
+
         if UserDataService.instance.avatarName != "" {
             userImg.image = UIImage(named: UserDataService.instance.avatarName)
             avatarName = UserDataService.instance.avatarName
@@ -38,6 +40,10 @@ class CreateAccountVC: UIViewController {
         }
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        print(">> CreateAccountVC.viewDidDisappear")
+    }
+
     @IBAction func closeBtn(_ sender: Any) {
         performSegue(withIdentifier: UNWIND_TO_CHANNEL, sender: nil)
         self.avatarName = "profileDefault"

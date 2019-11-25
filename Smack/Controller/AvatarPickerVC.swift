@@ -24,6 +24,14 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
         collectionView.delegate = self
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        print(">> AvatarPickerVC.viewDidAppear")
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        print(">> AvatarPickerVC.viewDidDisappear")
+    }
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "avatarCell", for: indexPath) as? AvatarCell {
             cell.configureCell(index: indexPath.item, type: avatarType)

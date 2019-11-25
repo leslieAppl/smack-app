@@ -21,6 +21,15 @@ class AddChannelVC: UIViewController {
         // Do any additional setup after loading the view.
         setupView()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print(">> AddChannelVC.viewDidAppear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        print(">> AddChannelVC.viewDidDisappear")
+    }
+
 
     @IBAction func closeBtn(_ sender: Any) {
         dismiss(animated: true, completion: nil)
