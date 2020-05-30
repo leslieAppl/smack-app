@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        print("This iPhone's frame.width: \(UIScreen.main.bounds.width)")
+        print("The iPhone screen width: \(UIScreen.main.bounds.width)")
 
         return true
     }

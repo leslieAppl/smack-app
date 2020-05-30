@@ -9,7 +9,7 @@
 import UIKit
 
 class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+        
     // Outlets
     @IBOutlet weak var menuBtn: UIButton!
     @IBOutlet weak var channelNameLbl: UILabel!
